@@ -10,7 +10,7 @@ export let menu;
         @apply flex flex-row items-center text-gray-600 px-4 py-2;
     }
     .items {
-        @apply  px-3 text-sm whitespace-no-wrap font-normal justify-center text-center ;
+        @apply  px-3 text-sm whitespace-no-wrap  justify-center text-center ;
     }
     .selected {
         @apply border-r-4 border-blue-400 text-blue-400 font-bold;
@@ -20,7 +20,7 @@ export let menu;
 
 <ul>
     {#each menu as list }
-    <li class="group hover:bg-blue-400">
+    <li class="group hover:bg-blue-400 hover:rounded-md">
         {#if list.title === 'Recruitment'}
             <a class="list group-hover:text-white" href={list.route} class:selected={segment === undefined}>
                     <i class="material-icons md-48">{list.icon}</i>

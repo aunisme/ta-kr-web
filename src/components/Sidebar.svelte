@@ -13,7 +13,7 @@ let labels = [
 <style>
     .sidebar {
         width: 230px;
-        @apply col-start-1 flex flex-col fixed  h-full border-r shadow-md border-gray-400;
+        @apply col-start-1 shadow-md flex flex-col fixed  h-full ;
     }
     .brand {
         @apply  mt-6 p-5 font-bold rounded-l-full text-white bg-blue-500 ml-2;

@@ -6,29 +6,17 @@
     
     <style>
         .list {
-            @apply flex flex-row items-center text-gray-600 px-3 py-2;
+            @apply flex flex-row items-center text-gray-600 px-3;
         }
-        .items {
-            @apply  px-3 text-sm whitespace-no-wrap font-normal justify-center text-center ;
-        }
-        /* .selected {
-            @apply border-r-4 border-blue-400 font-bold;
-        } */
     
     </style>
     
-    <ul class="flex flex-row">
+    <ul class="flex flex-row items-center">
         {#each menu as list }
-        <li class="group hover:bg-blue-400">
-            <a class="list group-hover:text-white" href={list.route}>
+        <li class="group">
+            <a class="list group-hover:text-blue-500" href={list.route}>
                 <i class="material-icons md-48">{list.icon}</i>
-                {#if list.title !== undefined}
-                   <span class="items">
-                    {list.title}
-                </span>
-                   {/if}
             </a>
-        
         </li>
             
         {/each}

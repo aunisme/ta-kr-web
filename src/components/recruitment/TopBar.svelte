@@ -19,16 +19,16 @@ let labels = [
         @apply flex flex-row m-5 p-5 rounded-md bg-white shadow-md;
     }
     .left-cta {
-        @apply m-5 p-5;
+        @apply my-6 items-center rounded-md;
     }
     .new {
-        @apply bg-blue-500 text-white  px-8 py-3 rounded-md;
+        @apply text-gray-600 ;
     }
 </style>
 
-<div class="wrapper">
-    <div class="left-cta">
-    <button class="new hover:bg-blue-700">New Job</button>
+<div class="wrapper ">
+    <div class="group left-cta new bg-white shadow-md hover:bg-blue-500">
+    <button class="group-hover:text-white px-10 py-4">New Job</button>
     </div>
     <div class="right-cta">
     <TopBarMenu menu={labels} />

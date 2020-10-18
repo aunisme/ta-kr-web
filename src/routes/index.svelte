@@ -1,4 +1,5 @@
 <script>
+import Journey from "../components/recruitment/Journey.svelte";
 import TopBar from "../components/recruitment/TopBar.svelte";
 
 </script>
@@ -12,3 +13,4 @@ import TopBar from "../components/recruitment/TopBar.svelte";
 </svelte:head>
 
 <TopBar />
+<Journey />

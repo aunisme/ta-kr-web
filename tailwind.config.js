@@ -4,7 +4,9 @@ module.exports = {
     extend: {},
   },
   variants: {
-    textColor: ['responsive', 'focus', 'group-hover']
+    textColor: ['responsive', 'focus', 'group-hover'],
+    borderStyle: ['responsive', 'hover', 'focus'],
+    borderRadius: ['responsive', 'hover', 'focus'],
   },
   plugins: [],
   future: {
