@@ -1,0 +1,7 @@
+.DS_Store
+/node_modules/
+/src/node_modules/images
+/src/node_modules/@sapper/
+/src/routes/blog/
+yarn-error.log
+/__sapper__/
