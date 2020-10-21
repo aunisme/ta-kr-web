@@ -13,14 +13,14 @@ export let menu;
         @apply  px-3 text-sm whitespace-no-wrap  justify-center text-center ;
     }
     .selected {
-        @apply border-r-4 border-blue-400 text-blue-400 font-bold;
+        @apply border-r-4 border-blue-400 text-blue-500 rounded-md rounded-r-none bg-gray-400 font-bold;
     }
 
 </style>
 
 <ul>
     {#each menu as list }
-    <li class="group hover:bg-blue-400 hover:rounded-md">
+    <li class="group hover:bg-blue-400 hover:rounded-md hover:rounded-r-none">
         {#if list.title === 'Recruitment'}
             <a class="list group-hover:text-white" href={list.route} class:selected={segment === undefined}>
                     <i class="material-icons md-48">{list.icon}</i>

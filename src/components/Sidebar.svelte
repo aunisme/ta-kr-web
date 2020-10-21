@@ -3,7 +3,7 @@ import List from './List.svelte';
 export let segment;
 let labels = [
         {route: '.', title:'Recruitment', icon: 'developer_board'},
-        {route: 'jobs', title:'Jobs', icon: 'developer_board'},
+        {route: 'jobs', title:'Jobs', icon: 'card_travel'},
 
     ];
 
@@ -13,7 +13,7 @@ let labels = [
 <style>
     .sidebar {
         width: 230px;
-        @apply col-start-1 shadow-md flex flex-col fixed  h-full ;
+        @apply col-start-1 shadow-md flex flex-col fixed  h-full bg-gray-300 ;
     }
     .brand {
         @apply  mt-6 p-5 font-bold rounded-l-full text-white bg-blue-500 ml-2;

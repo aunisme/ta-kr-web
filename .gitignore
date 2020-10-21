@@ -5,3 +5,4 @@
 /src/routes/blog/
 yarn-error.log
 /__sapper__/
+/src/serviceAccount.json

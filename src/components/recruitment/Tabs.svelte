@@ -11,10 +11,10 @@
   <style>
     .wrapper {
         --border-opacity: 1;
-        @apply flex flex-row mt-6 w-1/2 justify-start border-b border-gray-300;
-        -webkit-box-shadow: 0 6px 4px -4px rgba(226, 232, 240, var(--border-opacity));
+        @apply flex flex-row rounded-md  mt-3 pt-5 mx-auto fixed shadow-md  w-full z-10 justify-start bg-white border-2 border-b-0 border-gray-300;
+        /* -webkit-box-shadow: 0 6px 4px -4px rgba(226, 232, 240, var(--border-opacity));
         -moz-box-shadow: 0 6px 4px -4px rgba(226, 232, 240, var(--border-opacity));
-        box-shadow: 0 6px 4px -4px rgba(226, 232, 240, var(--border-opacity));
+        box-shadow: 0 6px 4px -4px rgba(226, 232, 240, var(--border-opacity)); */
       }
     .count {
         @apply ml-2 py-1 px-2 bg-blue-500 rounded-md text-white text-xs font-bold;
@@ -40,7 +40,7 @@
     } */
   </style>
   
-  <div class="wrapper">
+  <div class="wrapper container">
     <ul>
       {#each items as item}
         <li on:click={() => dispatch('onTabChange', item)} class:active={item === activeItem}>
